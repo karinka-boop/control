@@ -1,138 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
-
-body{
-    background-color: #17161E;
-    margin: 0 80px;
+body {
+  background-color: #17161E;
+  margin: 0 80px;
+  font-family: "Neue Machina", sans-serif; /* Убедитесь, что шрифт доступен */
 }
 
-.nav-list{
-    list-style: none;
-    display: flex;
-    flex-direction: row; 
-    float: right;
-    gap: 50px;  /* Расстояние между картинкой и текстом СПРАВА */
-    font-family: 'Poppins'
-    
-  }
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row; 
+  float: right;
+  gap: 50px;  /* Расстояние между элементами меню */
+}
 
+.site-name {
+  color: white;
+  display: flex;
+  flex-direction: row; /* Расположение в виде строки */
+  gap: 70px;  /* Расстояние между элементами в заголовке */
+}
 
-  .site-name{
-    color: white;
-    display: flex;
-    flex-direction: row; /* Расположение в виде СТРОКИ */
-    gap: 70px;  /* Расстояние между картинкой и текстом СПРАВА */
-    font-family: 'Lato'
-  }
-  .nav-item a {
-    text-decoration: none; /* Убираем подчеркивание ссылок */
-    color: #ffffff; /* Цвет текста */
-    font-weight: 400; /* Полужирный шрифт */
-    font-family: 'Lato';
-  }
-  
+.nav-item a {
+  text-decoration: none; /* Убираем подчеркивание ссылок */
+  color: #ffffff; /* Цвет текста */
+  font-weight: 400; /* Полужирный шрифт */
+}
 
-  .button-container {
-    display: flex; /* Используем flexbox для расположения в ряд */
-    float: right;
-      max-width: 1000px; /* Ограничиваем максимальную ширину контейнера*/
-      position: absolute;
-      right: 0;
-      margin-right: 200px;
-  }
+.button-container {
+  display: flex; /* Используем flexbox для расположения в ряд */
+  float: right;
+  position: absolute;
+  right: 0;
+  margin-right: 200px;
+}
 
-  .button {
-    border-top-width: 0.5px;
-    border-right-width: 0.5px;
-    border-bottom-width: 0.5px;
-    border-left-width: 0.5px;
-    border-color: #d9ff00;
-    background-color: #17161E; 
-    color: #E3FE0F; /* Темный цвет текста */
-    width: 200px;
-    padding: 10px 20px; /* Отступы внутри кнопки */
-    border-radius: 15px; /* Закругленные края */
-    cursor: pointer; /* Изменяем курсор при наведении */
-      font-size: 1em; /* Размер шрифта*/
-    transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
-  }
+.button {
+  border: 0.5px solid #d9ff00; /* Упрощенная запись для границы */
+  background-color: #17161E; 
+  color: #E3FE0F; /* Цвет текста */
+  width: 200px;
+  padding: 10px 20px; /* Отступы внутри кнопки */
+  border-radius: 15px; /* Закругленные края */
+  cursor: pointer; /* Изменяем курсор при наведении */
+  font-size: 1em; /* Размер шрифта */
+  transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+}
 
-  p{
-    color: white;
+p {
+  color: white;
+}
 
-  }
-
-  .pp img {
-    width: 100px; /* Ширина изображения */
-    height: auto; /* Автоматическая высота для сохранения пропорций */
-    animation: spin 4s linear infinite; /* Применение анимации */
-    float: right;
-    position: absolute;
-    right: 100;
+.pp img {
+  width: 100px; /* Ширина изображения */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  animation: spin 4s linear infinite; /* Применение анимации */
+  float: right;
+  position: absolute;
+  right: 100; /* Исправлено: нужно определить позицию правильно */
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg); /* Начальное состояние */
-    }
-    100% {
-        transform: rotate(360deg); /* Конечное состояние */
-    }
+  0% {
+      transform: rotate(0deg); /* Начальное состояние */
+  }
+  100% {
+      transform: rotate(360deg); /* Конечное состояние */
+  }
 }
 
-.ppp{
-    color: #E3FE0F;
-    margin-top: -100px;
+.ppp {
+  color: #E3FE0F;
+  margin-top: -100px;
 }
 
-.pppp{
-    color: white;
-    margin-left: 280px;
-    margin-top: -200px;
+.pppp {
+  color: white;
+  margin-left: 280px;
+  margin-top: -200px;
 }
-
 
 .button-con {
-    display: flex; /* Используем flexbox для расположения в ряд */
-    max-width: 1000px; /* Ограничиваем максимальную ширину контейнера*/
-    margin-bottom: 150px;
-  }
-  
-  .but, .but2{
-    background-color: #b8b8b8; /* Серый цвет фона */
-    color: #333; /* Темный цвет текста */
-    padding: 15px 50px; /* Отступы внутри кнопки */
-    margin: 0 20px; /* Отступы между кнопками */
-    border-radius: 10px; /* Закругленные края */
-    cursor: pointer; /* Изменяем курсор при наведении */
-      font-size: 1em; /* Размер шрифта*/
-    transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
-  }
-  
-  .but, .but2:hover {
-      background-color: #8f8f8f; /* Более темный серый при наведении*/
-  }
-
-  .but2{
-  border-top-width: 0.5px;
-  border-right-width: 0.5px;
-  border-bottom-width: 0.5px;
-  border-left-width: 0.5px;
-  border-color: #ffffff;
+  display: flex; /* Используем flexbox для расположения в ряд */
+  max-width: 1000px; /* Ограничиваем максимальную ширину контейнера */
+  margin-bottom: 150px;
+  gap: 20px; /* Расстояние между кнопками */
 }
 
-.but-con{
-    gap: 20px;
+.but, .but2 {
+  background-color: #b8b8b8; /* Цвет фона */
+  color: #333; /* Цвет текста */
+  padding: 15px 50px; /* Отступы внутри кнопки */
+  border-radius: 10px; /* Закругленные края */
+  cursor: pointer; /* Изменяем курсор при наведении */
+  font-size: 1em; /* Размер шрифта */
+  transition: background-color 0.3s ease; /* Плавное изменение */
 }
 
-.but3{
-  border-top-width: 0.5px;
-  border-right-width: 0.5px;
-  border-bottom-width: 0.5px;
-  border-left-width: 0.5px;
-  color:#17161E;
+.but:hover, .but2:hover {
+  background-color: #8f8f8f; /* Цвет при наведении */
 }
 
-main .collumns {
+.but2 {
+  border: 0.5px solid #ffffff; /* Упрощенная запись для границы */
+}
+
+main .columns {
   margin-top: 100px;
   display: flex;
   flex-direction: row;
@@ -142,20 +113,23 @@ main .collumns {
   font-weight: 400;
   filter: drop-shadow(1300px 300px 150px #d9ff0060);
 }
-main .collumns ul{
+
+main .columns ul {
   list-style: none;
-  width: 265px;
-}
-main .collumns .w3 ul{
-  color:#E3FE0F;
+  width: 295px;
 }
 
-main .hero .hero--info h1{
+main .columns .w3 ul {
+  color: #E3FE0F;
+}
+
+main .hero .hero--info h1 {
   color: white;
   font-size: 64px;
   font-weight: 700;
 }
-main .hero .hero--info{
+
+main .hero .hero--info {
   width: 500px;
 }
 
@@ -164,17 +138,16 @@ main .hero {
   margin-top: 200px;
 }
 
-main .hero img{
+main .hero img {
   position: absolute;
   right: 0;
   margin-top: -350px;
 }
 
-main .hero .hero--info p{
+main .hero .hero--info p {
   font-size: 18px;
   font-weight: 400;
 }
-
 
 main .hero .but3 {
   margin-top: 45px;
@@ -188,11 +161,61 @@ main .hero .but3 {
   font-weight: 400;
   filter: drop-shadow(-300px 150px 150px #d9ff0060);
 }
-main .bombom span {
-  color:#E3FE0F;
+
+main .bombom {
+  font-size: 64px; 
+  font-weight: 700;
 }
 
+main .bombom span {
+  color: #E3FE0F;
+}
 
+.school {
+  position: relative; /* Для абсолютного позиционирования вложенных элементов */
+  display: flex;
+  width: 507px;
+  height: 77px;
+}
+
+.frame-283, .frame-282 {
+  box-sizing: border-box; /* Чтобы padding не увеличивал ширину */
+  display: flex;
+  align-items: center;
+  padding: 22px;
+  border-radius: 15px;
+}
+
+.frame-283 {
+  flex: 1; /* Занимает доступное пространство */
+  border: 1px solid #FFFFFF;
+  background-color: transparent; /* Убираем желтый фон */
+}
+
+.frame-282 {
+  background-color: #E3FE0F;
+  justify-content: flex-end; /* Кнопка справа */
+  width: 245px;
+  height: 77px;
+}
+
+.token, .vuetoken {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4; /* Эквивалент 140% */
+}
+
+.token {
+  color: #FFFFFF;
+}
+
+.vuetoken {
+  color: #17161E;
+}
+
+.ts {
+  color: white;
+}
 
 .register-container {
   max-width: 1000px;
@@ -223,15 +246,16 @@ main .bombom span {
   height: 73px;
   margin-bottom: 20px;
   border-radius: 10px;
-  background-color: #17161E;
-  border-color: #ffffff;
+  background-color: #17161E; /* Прозрачный не лучше вариант */
 }
 
 .register-container input::placeholder {
-  color: white;
+  color: rgb(255, 255, 255); /* Убедитесь, что текст в поле виден */
+  font-family: 'Neue Machina';
   font-size: 18px;
   font-weight: 400;
 }
+
 .register-container button {
   width: 100%;
   padding: 10px;
@@ -241,4 +265,201 @@ main .bombom span {
   font-size: 24px;
   font-weight: 400;
   cursor: pointer;
+}
+.write{
+  border: 1px solid #333;
+  font-size: 30px;
+  color: rgb(190, 190, 190);
+  border-color: #f0f0f0;
+  border-radius: 10px;
+  width: 332px;
+  height: 75px;
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+
+.blook {
+  display: flex;
+  flex-direction: column; /* Изменяем направление на вертикальное */
+  align-items: flex-end; /* Правое расположение блоков */
+  gap: 50px; /* Отступ между блоками */
+  margin-top: 8rem;
+}
+
+.block {
+  padding: 10px;
+  border: 1px solid #333; /* Добавляем границу */
+  width: 650px;
+  border-color: #f0f0f0;
+  background-color: #17161E;
+  border-radius: 10px;
+  color: #f0f0f0;
+  height: 40px;
+  position: relative; /* Добавляем позиционирование для стрелки */
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.faq{
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  width: 95%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  justify-self: center;
+  max-width: 1720px;
+}
+
+.faq .info{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 62px;
+  width: 370px;
+  margin-right: auto;
+}
+
+.faq h2{
+  margin: 0;
+  padding: 0;
+}
+
+.faq .title{
+  font-family: 'Neue Machina';
+  font-size: 64px;
+  font-weight: 700;
+  color: white;
+}
+
+.faq .text{
+  font-family: 'IBM Plex Mono';
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+.faq .button_mail{
+  display: flex;
+  flex-direction: row;
+  width: 272px;
+  height: 25px;
+  padding: 30px;
+  border: 1px solid white;
+  border-radius: 15px;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.faq .button_mail:hover{
+  transform: scale(1.05);
+}
+
+.faq a{
+  text-decoration: none;
+}
+
+.faq .button_text{
+  margin-right: auto;
+}
+
+
+.faq .button img{
+  margin-left: auto;
+}
+
+
+.faq .buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 950px;
+  margin-left: auto;
+}
+
+.faq .buttons .button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  border: 1px solid white;
+}
+
+
+
+
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 100%;
+  max-width: 1920px;
+  border-top: 1px solid white;
+  justify-self: center;
+  margin-top: 200px;
+  gap: 30px;
+}
+
+footer a{
+  color: rgba(255, 255, 255, 0.70);
+  text-decoration: none;
+}
+
+footer p{
+  padding: 0;
+  margin: 0;
+}
+
+footer .main{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-right: auto;
+  width: 100%;
+}
+
+footer .logo{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+footer .title{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+footer .main .links{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-left: auto;
+}
+
+footer .bottom{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer .bottom .copyright{
+  display: flex;
+  margin-right: auto;
+}
+
+footer .bottom .links{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  gap: 20px;
 }
